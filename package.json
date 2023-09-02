@@ -1,0 +1,29 @@
+{
+  "name": "svg_logo_maker",
+  "version": "1.0.0",
+  "description": "Generate a Logo for projects using user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielLongacre/SVG_Logo_Maker.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node"
+  ],
+  "author": "Daniel Longacre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielLongacre/SVG_Logo_Maker/issues"
+  },
+  "homepage": "https://github.com/DanielLongacre/SVG_Logo_Maker#readme",
+  "dependencies": {
+    "inquirer": "^9.2.10"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
