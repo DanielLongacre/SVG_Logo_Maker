@@ -1,28 +1,49 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const {Triange, Circle, Square} = require('./lib/shapes');
 
 
+
+//User questions
 inquirer
     .prompt([
         {
             type: 'input',
-            message: 'Enter name of your logo (3 initials): ',
-            name: 'name'
+            name: 'text',
+            message: 'Enter up to 3 characters for you logo name: ',
         },
         {
             type: 'input',
-            message: 'Enter the color of the text: ',
-            name: 'textcolor'
+            name: 'textcolor',
+            message: 'Enter the color(or hexadecimal number) of the text: ',
         },
         {
             type: 'choice',
-            message: 'What shape do you want your logo: ',
+            name: 'shape',
+            message: 'Pick a shape for your logo: ',
             choices: ['Triangle', 'Circle', 'Square'],
-            name: 'shape'
         },
         {
             type: 'input',
-            message: 'Enter the color of the shape: ',
-            name: 'shapecolor'
+            name: 'shapecolor',
+            message: 'Enter the color(or hexadecimal number) of the shape: ',
         },
     ]) 
+
+//Write data to a file
+function writeToFile(fileName, data) {
+    console.log('Creating a logo...')
+    fs.writeFile(fileName, data, function(err) {
+        if(err) {
+            return console.log(err);
+        }
+        console.log('You have successfully generated a logo!');
+    });
+}
+
+async function init() {
+    //Prompt user for input
+    const input = await inquirer.prompt();
+
+    
+}
