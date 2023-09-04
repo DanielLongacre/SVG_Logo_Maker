@@ -33,9 +33,12 @@ const questions = [
 inquirer.prompt(questions).then((answers) => {
     //Set the answers to a variable
     const {text, textColor, shape, shapeColor} = answers;
+    //Instantiate the shape
     const shapeObj = new Shape();
+    //Create a variable to hold the shape once we get the users input 
     let svgElement = '';
 
+    //Set the shapes color
     shapeObj.setColor(shapeColor);
 
     //Instantiate the shape object and color based on the users choice
@@ -70,7 +73,7 @@ inquirer.prompt(questions).then((answers) => {
     `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
         ${svgElement}
         <text x="${x}" y="${y}" fill="${textColor}" font-size="50" text-anchor="middle">${text}</text>
-        </svg>
+    </svg>
     `
     //Write to a file
     fs.writeFileSync('logo.svg', finalSvg);
