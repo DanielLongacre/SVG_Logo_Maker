@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/DanielLongacre/SVG_Logo_Maker#readme",
   "dependencies": {
-    "inquirer": "^9.2.10"
+    "inquirer": "^8.2.6"
   },
   "devDependencies": {
     "jest": "^29.6.4"
