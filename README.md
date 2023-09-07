@@ -36,6 +36,6 @@ The following image shows a mock-up of the generated SVG given the following inp
 
 ## Walkthrough
 
-The following is a video walkthrough of the application's functionality:vvvvvvvvvvv
+The following is a video walkthrough of the application's functionality:
 
 Click [here](https://drive.google.com/file/d/1OPo1ARqn7EXvg84rbcXMo2BdWzupD7Fd/view) to watch the application walkthrough.
